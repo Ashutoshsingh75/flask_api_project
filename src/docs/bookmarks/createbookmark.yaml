@@ -1,0 +1,34 @@
+User Registration
+---
+tags:
+  - Create Bookmark
+parameters:
+  - in: header
+    name: Authorization
+    description: exp:- Bearer  (refresh token)
+    required: true
+  - name: body
+    description: The body should contain the user Registration data
+    in: body
+    required: false
+    schema:
+      type: object
+      required:
+        - "body"
+        - "url"
+      properties:
+        body:
+          type: "body"
+          example: "my site etc"
+        url:
+          type: "url"
+          example: "http://google.com/"
+
+responses:
+  201:
+    description: When a user successfully logs in
+
+  400:
+    description: Fails to Register due to bad request data
+  200:
+    description: ok

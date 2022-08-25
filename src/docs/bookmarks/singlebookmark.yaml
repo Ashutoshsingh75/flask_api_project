@@ -1,0 +1,20 @@
+
+
+tags:
+  - Bookmarks
+parameters:
+  - in: header
+    name: Authorization
+    description: exp:- Bearer  (apiKey)
+    required: true
+  - in: path
+    name: id
+    description: id must be interger
+    required: true
+
+responses:
+  302:
+    description: Redirects to the original link
+
+  404:
+    description: Record was not found

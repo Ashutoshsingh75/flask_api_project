@@ -1,0 +1,19 @@
+
+
+tags:
+  - GET ACCSSES TOKEN
+parameters:
+  - in: header
+    name: Authorization
+    description: exp:- Bearer  (refresh token)
+    required: true
+  
+
+responses:
+  302:
+    description: Redirects to the original link
+
+  404:
+    description: Record was not found
+  200:
+     description: ok
